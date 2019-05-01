@@ -19,9 +19,7 @@ function geoCode(event) {
     // getting user input
     var location = locationInput_input.value;
 
-    // if (location.includes('road')) {
-    //     zoom = '14';
-    // }
+    // Calling API
     axios
         .get("https://us1.locationiq.com/v1/search.php?", {
             params: {
