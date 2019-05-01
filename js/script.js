@@ -67,8 +67,8 @@ function geoCode(event) {
             addressComponentsOutput += `
                     <li class="list-group-item"><strong>Open Street Map (OSM) type</strong>: ${
                         addressComponents["osm_type"]
-                }</li>`;
-            
+                    }</li>`;
+
             // getting nearby places
             axios
                 .get("https://us1.locationiq.com/v1/nearby.php", {
