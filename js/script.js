@@ -107,7 +107,7 @@ function geoCode(event) {
             // Display map
             var mapImg = `
             <h2 class="mt-4 mb-5">Map:</h2>
-            <img src="https://maps.locationiq.com/v2/staticmap?key=90e5c08064449e&center=${lat},${lng}&zoom=${zoom}&markers=icon:small-red-cutout|${lat},${lng}" alt="${formattedAddress}" style="display: block; margin: 0 auto; width: 50%;">`;
+            <img src="https://maps.locationiq.com/v2/staticmap?key=90e5c08064449e&center=${lat},${lng}&zoom=${zoom}&markers=icon:small-red-cutout|${lat},${lng}" alt="${formattedAddress}" style="display: block; margin: 0 auto; width: 50%; border: 2px solid #000; padding: 10px" class="rounded">`;
 
             // output to app
             formattedAddress_div.innerHTML = formattedAddressOutput;
